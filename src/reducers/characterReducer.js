@@ -6,10 +6,10 @@ const initialState = {
   profession: ''
 };
 
-export default function reducer(state = initialState, action){
-  switch(action.type){
+export default function reducer(state = initialState, action) {
+  switch(action.type) {
     case SET_CHARACTER:
-      return action.payload;
+      return { ...state, ...action.payload };
     default:
       return state;
   }

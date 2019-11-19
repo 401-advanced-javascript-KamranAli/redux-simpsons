@@ -1,8 +1,8 @@
 import React from 'react';
-import Characters from './Character/Characters';
+import DisplayCharacter from '../containers/DisplayCharacter';
 
 export default function App() {
   return (
-    <Characters />
+    <DisplayCharacter />
   );
 }
